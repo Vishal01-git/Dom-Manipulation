@@ -1,30 +1,32 @@
-//const form = document.querySelector('form')
-//
-//form.addEventListener('submit', (event) => {
-//    event.preventDefault()
-//
-//    const name = document.querySelector('#name')
-//    const address = document.querySelector('#address')
-//
-//    const nameValue = name.value
-//    const addressValue = address.value
-//    
-//    console.log(nameValue)
-//    console.log(addressValue)
-//    if (!nameValue) {
-//        alert("Eneter name")
-//        return
-//    }
-//
-//    if (!addressValue) {
-//        alert("Eneter Address")
-//        return
-//    }
-//})
+const form = document.querySelector('form')
+
+form.addEventListener('submit', (event) => {
+  
+   event.preventDefault()
+   //console.log("button pressed")
+
+   const name = document.querySelector('#name')
+   const address = document.querySelector('#address')
+
+  const nameValue = name.value
+    const addressValue = address.value
+   
+   console.log(nameValue)
+    console.log(addressValue)
+   if (!nameValue) {
+       alert("Enter name")
+       return
+   }
+
+   if (!addressValue) {
+       alert("Enter Address")
+   }
+})
+
 
 const input = document.querySelector("#title")
 const errorMessage = document.querySelector("#error")
-console.log(input);
+//console.log(input);
 
 function validateName(nameValue) {
     if (!nameValue) {
@@ -39,6 +41,7 @@ function validateName(nameValue) {
 }
 
 input.addEventListener("keyup", (event) => {
+    //console.log(event);
     console.log(input.value)
     const value = input.value
 
